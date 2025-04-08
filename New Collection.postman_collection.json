@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "26020b66-bcab-41f3-a373-fa729d57c830",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43830358",
+		"_collection_link": "https://safa-1211678.postman.co/workspace/safa's-Workspace~33a43aeb-58f6-452f-84e4-1c9c88a4587e/collection/43830358-26020b66-bcab-41f3-a373-fa729d57c830?action=share&source=collection_link&creator=43830358"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3NDQxMTI2OTksImV4cCI6MTc0NDExNjI5OX0.5J_Q7z8iOf7ZvvzarxSRNL5JD5jobVHXxBHBA3NYJsw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"PRD-6\",\r\n  \"name\": \"test pro\",\r\n  \"description\": \"test safa.\",\r\n  \"image\": \"https://example.com/images/the-safa.jpg\",\r\n  \"category\": \"gateaux\",\r\n  \"price\": 8.99,\r\n  \"quantity\": 50,\r\n  \"internalReference\": \"INT-REF-002\",\r\n  \"shellId\": 2,\r\n  \"inventoryStatus\": \"INSTOCK\",\r\n  \"rating\": 4.7,\r\n  \"createdAt\": 17150000,\r\n  \"updatedAt\": 17150000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3NDQxMTI2OTksImV4cCI6MTc0NDExNjI5OX0.5J_Q7z8iOf7ZvvzarxSRNL5JD5jobVHXxBHBA3NYJsw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"PRD-6\",\r\n  \"name\": \"test pro\",\r\n  \"description\": \"test safa.\",\r\n  \"image\": \"https://example.com/images/the-safa.jpg\",\r\n  \"category\": \"gateaux\",\r\n  \"price\": 8.99,\r\n  \"quantity\": 50,\r\n  \"internalReference\": \"INT-REF-002\",\r\n  \"shellId\": 2,\r\n  \"inventoryStatus\": \"INSTOCK\",\r\n  \"rating\": 4.7,\r\n  \"createdAt\": 17150000,\r\n  \"updatedAt\": 17150000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@admin.com\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"firstname\": \"Admin\",\r\n  \"email\": \"admin@admin.com\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
